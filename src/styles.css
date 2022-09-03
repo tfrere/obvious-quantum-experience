@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body {
+  position: fixed;
+  overflow: hidden;
+  overscroll-behavior-y: none;
+  font-family: helvetica, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  color: black;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+
+#html-portal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+#html-portal > div {
+  user-select: none;
+  pointer-events: none !important;
+}
+
+#html-portal > div > div {
+  user-select: none;
+  pointer-events: none !important;
+}
+
+#html-portal > div > div > div {
+  user-select: none;
+  pointer-events: none !important;
+}
+
+#html-portal > div > div > div > div {
+  user-select: none;
+  pointer-events: none !important;
+}
+
+.html-box {
+  font-size: 1rem;
+  text-align: left;
+  /* background: #202035; */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  pointer-events: none;
+  user-select: none;
+}
+.html-circle {
+  width: 450px;
+  height: 450px;
+  border: 2px solid white;
+  border-radius: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.html-popup {
+  color: white;
+  font-size: 2rem;
+}
+
+.html-popup:after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  width: 20px;
+  height: 2px;
+  background: white;
+}
+
+.html-popup:before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  left: -38px;
+  width: 10px;
+  height: 2px;
+  transform: rotate(-45deg);
+  background: white;
+}
